@@ -8,7 +8,7 @@
     "node": "12.x"
   },
   "scripts": {
-    "build": "tsc",
+    "build:prod": "tsc",
     "play": "npx ts-node lib/index.ts",
     "format": "prettier --config .prettierrc 'lib/**/*.ts' --write",
     "lint": "eslint . --ext .ts",
