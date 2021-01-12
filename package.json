@@ -8,6 +8,10 @@
   "engines": {
     "node": "12.x"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/amoncusir/ddrol-lib"
+  },
   "scripts": {
     "build": "tsc",
     "play": "npx ts-node lib/index.ts",
