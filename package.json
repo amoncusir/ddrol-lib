@@ -1,7 +1,8 @@
 {
   "name": "ddrol",
   "version": "0.0.1",
-  "main": "lib/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
   "engines": {
     "node": "12.x"
