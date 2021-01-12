@@ -8,6 +8,9 @@
   "engines": {
     "node": "12.x"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "build": "tsc",
     "play": "npx ts-node lib/index.ts",
