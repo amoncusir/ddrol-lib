@@ -23,6 +23,9 @@ jobs:
       - name: 'Build'
         run: npm build
 
+      - name: 'Version'
+        run: npm version prerelease --preid "${GITHUB_REF##*/}"
+
       - name: 'Publish'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

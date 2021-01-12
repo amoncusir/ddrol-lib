@@ -80,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610479043056</updated>
       <workItem from="1610479044126" duration="8421000" />
-      <workItem from="1610488662998" duration="5519000" />
+      <workItem from="1610488662998" duration="5919000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <created>1610486705355</created>
@@ -229,7 +229,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610494050168</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="change to npm builder">
+      <created>1610494253783</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1610494253783</updated>
+    </task>
+    <task id="LOCAL-00023" summary="setup npm">
+      <created>1610494355548</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1610494355548</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +258,9 @@
     <MESSAGE value="wip" />
     <MESSAGE value="fix" />
     <MESSAGE value="try" />
-    <option name="LAST_COMMIT_MESSAGE" value="try" />
+    <MESSAGE value="change to npm builder" />
+    <MESSAGE value="setup npm" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup npm" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
