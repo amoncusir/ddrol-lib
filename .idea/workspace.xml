@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="54829163-c5c8-46f6-ba05-a5f0628f578d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/develop-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/develop-package.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610479043056</updated>
       <workItem from="1610479044126" duration="8421000" />
-      <workItem from="1610488662998" duration="2970000" />
+      <workItem from="1610488662998" duration="3433000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <created>1610486705355</created>
@@ -166,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610491382643</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="wip">
+      <created>1610491671441</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610491671441</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

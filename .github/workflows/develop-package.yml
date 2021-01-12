@@ -8,17 +8,17 @@ on:
 
 jobs:
 
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
+#  build:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v2
+#      - uses: actions/setup-node@v1
+#        with:
+#          node-version: 12
+#      - run: yarn install --frozen-lockfile
+#      - run: yarn build
 
-  publish:
+  main:
     needs:
       - build
     runs-on: ubuntu-latest
@@ -29,14 +29,16 @@ jobs:
           node-version: 12
           registry-url: 'https://npm.pkg.github.com/'
           token: ${{ secrets.GITHUB_TOKEN }}
+          scope: '@amoncusir'
 
-      - run: yarn install --frozen-lockfile && yarn build
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 12
-          registry-url: 'https://npm.pkg.github.com/'
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - run: yarn publish --preid ${GITHUB_REF##*/}
-#      - run: npm publish --tag "${GITHUB_REF##*/}"
+      - name: 'yarn install'
+        run: yarn install --frozen-lockfile
+
+      - name: 'yarn build'
+        run: yarn build
+
+      - name: 'yarn publish'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: yarn publish --preid ${GITHUB_REF##*/}
+#      - run: npm publish --tag "${GITHUB_REF##*/}"
