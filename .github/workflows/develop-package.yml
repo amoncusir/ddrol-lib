@@ -24,7 +24,7 @@ jobs:
         run: npm build
 
       - name: 'Version'
-        run: npm version prerelease --preid "${GITHUB_REF##*/}"
+        run: 'npm version prerelease --preid "${GITHUB_REF##*/}" --no-git-tag-version'
 
       - name: 'Publish'
         env:
