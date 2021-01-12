@@ -26,7 +26,10 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
+      - run: echo ${NODE_AUTH_TOKEN}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - run: yarn install --frozen-lockfile
-      - run: yarn publish --frozen-lockfile --prepatch --preid ${GITHUB_REF##*/}
+      - run: yarn publish --frozen-lockfile --preid ${GITHUB_REF##*/}
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
