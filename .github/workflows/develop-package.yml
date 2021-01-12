@@ -7,17 +7,6 @@ on:
       - 'feature/**'
 
 jobs:
-
-#  build:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/checkout@v2
-#      - uses: actions/setup-node@v1
-#        with:
-#          node-version: 12
-#      - run: yarn install --frozen-lockfile
-#      - run: yarn build
-
   main:
     runs-on: ubuntu-latest
     steps:
@@ -28,14 +17,13 @@ jobs:
           registry-url: 'https://npm.pkg.github.com/'
           scope: '@amoncusir'
 
-      - name: 'yarn install'
-        run: yarn install --frozen-lockfile
+      - name: 'Install'
+        run: npm ci
 
-      - name: 'yarn build'
-        run: yarn build
+      - name: 'Build'
+        run: npm build
 
-      - name: 'yarn publish'
+      - name: 'Publish'
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm publish --tag ${GITHUB_REF##*/}
-        # --preid ${GITHUB_REF##*/}
+        run: 'npm publish --tag "${GITHUB_REF##*/}"'
