@@ -31,7 +31,8 @@ jobs:
 
 #      - run: yarn install --frozen-lockfile
 #      - run: yarn publish --preid ${GITHUB_REF##*/}
-      - run: ls -la ./build/
+      - run: ls -la
+      - run: echo "${GITHUB_REF##*/}"
       - run: npm publish --tag "${GITHUB_REF##*/}"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
