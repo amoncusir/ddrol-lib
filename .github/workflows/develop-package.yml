@@ -36,7 +36,7 @@ jobs:
         run: yarn build
 
       - name: 'yarn publish'
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#        env:
+#          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn publish --preid ${GITHUB_REF##*/}
 #      - run: npm publish --tag "${GITHUB_REF##*/}"
