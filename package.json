@@ -1,5 +1,5 @@
 {
-  "name": "ddrol",
+  "name": "@amoncusir/ddrol",
   "version": "0.0.1",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -7,9 +7,6 @@
   "license": "MIT",
   "engines": {
     "node": "12.x"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "build": "tsc",
