@@ -1,4 +1,4 @@
-import { User } from "@domain/user";
+import { User } from "@lib/domain/user";
 
 
 export interface Game
