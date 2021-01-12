@@ -26,7 +26,6 @@ jobs:
         with:
           node-version: 12
           registry-url: 'https://npm.pkg.github.com/'
-          token: ${{ secrets.GITHUB_TOKEN }}
           scope: '@amoncusir'
 
       - name: 'yarn install'
@@ -36,7 +35,7 @@ jobs:
         run: yarn build
 
       - name: 'yarn publish'
-#        env:
-#          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn publish --preid ${GITHUB_REF##*/}
 #      - run: npm publish --tag "${GITHUB_REF##*/}"
