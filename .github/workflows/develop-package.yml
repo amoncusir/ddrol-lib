@@ -21,10 +21,9 @@ jobs:
         run: npm ci
 
       - name: 'Build'
-        run: npm build
+        run: npm run build
 
       - name: 'Version'
-#        run: 'npm version prerelease --preid "${GITHUB_REF##*/}" --no-git-tag-version'
         run: 'npm version "$(npm run --silent project:version)-${GITHUB_REF##*/}.$(date +%s)" --no-git-tag-version'
 
       - name: 'Publish'
