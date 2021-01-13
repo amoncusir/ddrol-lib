@@ -1,5 +1,5 @@
 {
-  "name": "@amoncusir/ddrol",
+  "name": "@amoncusir/ddrol-lib",
   "version": "0.0.1",
   "main": "build/index.js",
   "types": "build/index.d.ts",
