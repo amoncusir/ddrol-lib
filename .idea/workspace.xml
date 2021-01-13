@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="54829163-c5c8-46f6-ba05-a5f0628f578d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/develop-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/develop-package.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/release-package.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/release-package.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610479043056</updated>
       <workItem from="1610479044126" duration="8421000" />
-      <workItem from="1610488662998" duration="5919000" />
+      <workItem from="1610488662998" duration="7219000" />
     </task>
     <task id="LOCAL-00001" summary="wip">
       <created>1610486705355</created>
@@ -243,7 +247,28 @@
       <option name="project" value="LOCAL" />
       <updated>1610494355548</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="set version">
+      <created>1610494588476</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1610494588477</updated>
+    </task>
+    <task id="LOCAL-00025" summary="set version">
+      <created>1610494660923</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1610494660923</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fix npm version (tks npm for the docs ¬¬)">
+      <created>1610494866748</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1610494866748</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +285,9 @@
     <MESSAGE value="try" />
     <MESSAGE value="change to npm builder" />
     <MESSAGE value="setup npm" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup npm" />
+    <MESSAGE value="set version" />
+    <MESSAGE value="fix npm version (tks npm for the docs ¬¬)" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix npm version (tks npm for the docs ¬¬)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

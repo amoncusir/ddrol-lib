@@ -6,26 +6,23 @@ on:
       - created
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - run: yarn install --frozen-lockfile && yarn build
-
-  publish:
-    needs:
-      - build
+  main:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: 12
-          registry-url: https://npm.pkg.github.com/
-      - run: yarn install --frozen-lockfile
-      - run: yarn publish --frozen-lockfile
+          registry-url: 'https://npm.pkg.github.com/'
+          scope: '@amoncusir'
+
+      - name: 'Install'
+        run: npm ci
+
+      - name: 'Build'
+        run: npm build
+
+      - name: 'Publish'
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: 'npm publish'
